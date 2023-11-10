@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>onwheels</title>
+  </head>
+  <style>
+    body {
+      background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+      margin: 60px auto;
+    }
+    h1 {
+      text-align: center;
+      color: rgb(80, 58, 2);
+      font-weight: bolder;
+      border: 1px solid;
+      border-radius: 4px normal black;
+      padding: 20px;
+      font-style: initial;
+      font-size: 300%;
+      background-color: rgb(252, 57, 57);
+    }
+
+    h2 {
+      text-align: center;
+      padding: 15px;
+      font-size: 25px;
+      font-style: italic;
+    }
+    img {
+      text-align: center;
+      display: block;
+      border-radius: 10px;
+      margin: 0 auto;
+      max-width: 200%;
+      height: 340;
+      width: 500px;
+    }
+    p {
+      text-align: center;
+      line-height: 1, 5;
+      font-size: 20px;
+      font-weight: 400;
+      margin: 0 auto;
+    }
+    .introductions {
+      line-height: 1.5;
+    }
+
+    button {
+      color: #0e0b16;
+      font-size: 15px;
+      display: block;
+      margin: 20px auto;
+      padding: 15px 20px;
+      background-color: transparent;
+      border: 1px solid#13023e;
+      border-radius: 30px;
+      box-shadow: #885df1 2px 5px 5px rgba(0, 0, 0, 0, 2);
+      transition: all 200ms ease-in-out;
+    }
+    button:hover {
+      background-color: blue;
+      color: rgb(73, 84, 3);
+      cursor: pointer;
+    }
+    .coder {
+      text-align: end;
+      font-family: cursive;
+      font-weight: lighter;
+      margin-top: 0 auto;
+    }
+  </style>
+  <body>
+    <h1>🚗ZaeDrive🚗</h1>
+    <h2>We Make Driving Easy</h2>
+    <img
+      src="https://img.freepik.com/premium-vector/driving-school-begginer-driver-learning-parking-driving-examination-instructor-checking-student-knowledge-traffic-law-road-rule-study-road-signs-receiving-driver-s-licensetraining-course_458444-1783.jpg"
+      alt="Some of the traffic laws and rules to be followed for one to pass road test"
+      width="200"
+    />
+    <hr />
+    <p class="introduction">
+      <strong>🚗ZaeDrive🚗</strong>
+      offers affordable and accessible theory and practical driving lessons for
+      Zimbabwean citizens that incoporate reference to the Zimbabwean Highway
+      Code to ensure that aspiring drivers not only gain practical skills but
+      also develop a thorough understanding of road safety principles.
+      <span>
+        The aim to produce responsible drivers who will adhere to traffic
+        regulations significantly improving road safety standards in the
+        country.
+        <br />
+        <a href="https://www.zaenicky.com" target="_blank">
+          More Information
+        </a>
+      </span>
+    </p>
+    <button>Register Now</button>
+    <div class="coder">
+      <em>This page was built by</em>
+      <a
+        href="https://zw.linkedin.com/in/emmah-zanele-mpofu-a3b649254"
+        target="_blank"
+        >Emmah Zanele Mpofu</a
+      >
+    </div>
+    <script>
+      function registerNow() {
+        let email = prompt("What is your email address?");
+        let age = prompt("How old are you?");
+        let heading = document.querySelector("h1");
+        if (age >= 16) {
+          heading.innerHTML =
+            "Hi! You can apply using the link we sent in your email";
+        } else {
+          heading.innerHTML = "Sorry! you can't apply, you are under age. ";
+        }
+      }
+
+      let registerNowButton = document.querySelector("button");
+      registerNowButton.addEventListener("click", registerNow);
+    </script>
+  </body>
+</html>
